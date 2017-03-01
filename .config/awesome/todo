@@ -1,0 +1,16 @@
+powerarrow config:
+	terminal doesn't start
+	battery monitor
+
+update vicious
+
+vicious volume widget don't work because 
+
+    local f = io.popen("amixer -M get " .. helpers.shellquote(warg))
+should be replaced with 
+	amixer -D pulse sget Master
+
+or the contrib/pulse widget should be considered
+
+
+
