@@ -300,9 +300,11 @@ MD2="/home/christopher/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downlo
 
 MD="~/Documents/Mendeley\ Desktop"
 
-ra="/home/christopher/Documents/Vishwanath/readmission"
-RA="/home/christopher/Documents/Vishwanath/Readmissions"
-AWM="/home/christopher/.config/awesome"
+#ra="/home/christopher/Documents/Vishwanath/readmission"
+#RA="/home/christopher/Documents/Vishwanath/Readmissions"
+#AWM="/home/christopher/.config/awesome"
+
+CF="~/Projects/config"
 
 #alias MD="/home/christopher/.local"
 #alias MD="/home/christopher/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded"

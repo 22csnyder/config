@@ -7,3 +7,12 @@ For example:
 ~/.vimrc -> ~/Projects/config/.vimrc
 
 ~/.config/awesome -> ~/Projects/config/.config/awesome
+
+
+ln example:
+(from Projects/config)
+ln -st ~ .zshrc
+
+(s) soft link
+(t) in this directory create links to these targets
+
