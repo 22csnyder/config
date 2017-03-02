@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/christopher/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -273,7 +273,10 @@ ML=~/Documents/Market-Learn
 LR=~/Documents/Classes/EE371R/ClassProject
 #GLR="git@gitlab.com:Snyder/Lip-Read.git"
 #GUL="git@gitlab.com:Snyder/Utilities.git"
-UL=~/.bin/Utilities
+
+
+UL=~/Projects/Utilities
+
 PATH=$PATH:$UL
 #source $UL/useful_functions
 source $UL/source_me
@@ -304,7 +307,7 @@ MD="~/Documents/Mendeley\ Desktop"
 #RA="/home/christopher/Documents/Vishwanath/Readmissions"
 #AWM="/home/christopher/.config/awesome"
 
-CF="~/Projects/config"
+export CF=~/Projects/config
 
 #alias MD="/home/christopher/.local"
 #alias MD="/home/christopher/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded"
@@ -319,4 +322,7 @@ CF="~/Projects/config"
 #zsh ~/gnome-terminal-colors-solarized/set_dark.sh
 
 export COPASIDIR=~/Documents/Classes/BME383J/COPASI-4.16.104-Linux-64bit
+
+
+#this is a test
 
