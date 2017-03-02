@@ -3,16 +3,19 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+" set rtp+=~/Projects/config/.vim/bundle/Vundle.vim
+
+
 call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('/home/chris/Projects/config/.vim/bundle')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
 
 
@@ -31,7 +34,7 @@ set relativenumber
 
 syntax enable
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 " enable syntax highlighting
 syntax enable
