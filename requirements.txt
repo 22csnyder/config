@@ -24,7 +24,7 @@ nbconvert==4.2.0
 nbformat==4.1.0
 notebook==4.2.2
 numpy==1.11.1
-pandas=0.19.2
+pandas==0.19.2
 pathlib2==2.1.0
 pexpect==4.2.1
 pickleshare==0.7.4
@@ -46,4 +46,4 @@ tqdm==4.7.1
 traitlets==4.2.1
 wcwidth==0.1.7
 widgetsnbextension==1.2.6
-xgboost=0.6a2
+xgboost==0.6a2
