@@ -6,23 +6,82 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " set rtp+=~/Projects/config/.vim/bundle/Vundle.vim
 
 
-call vundle#begin()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('/home/chris/Projects/config/.vim/bundle')
+call plug#begin('~/.vim/plugged')
+"Call :PlugInstall when you add something new
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
-"Bundle 'Valloric/YouCompleteMe'
+Plug 'tmhedberg/SimpylFold'
+Plug 'vim-scripts/indentpython.vim'
+
+"Specifying this way, vimplug will not autoupdate big YCM package
+Plug '~/.vim/plugged/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
+
+"Use gl or gL operators for alignment: 
+"try gl=
+"glip
+"3gLi(,
+Plug 'tommcdo/vim-lion'
+
+Plug 'bluz71/vim-moonfly-colors'
+
+"alt colorscheme
+"Plug 'rakr/vim-one'
+
+
+"The vim-visual-star-search plugin allows * and # searches to occur on the current visual selection.
+Plug 'nelstrom/vim-visual-star-search'
+
+
+"ciw - change inside word
+"yi) - yank inside parenthesis
+"vat - visually select around tag
+"di" - delete inside double quotes
+
+"ci* - change inside star
+"va| - visually select around pipe
+"ci_ - change inside underscore
+Plug 'wellle/targets.vim'
+
+
+"Highlighting for f movement
+Plug 'rhysd/clever-f.vim'
+let g:clever_f_across_no_line = 1
+let g:clever_f_timeout_ms = 3000
+
+
 "Plugin 'scrooloose/syntastic'
 
 
-" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()
+
+
+"#call vundle#begin()
+"#
+"#" alternatively, pass a path where Vundle should install plugins
+"#" call vundle#begin('/home/chris/Projects/config/.vim/bundle')
+"#
+"#" let Vundle manage Vundle, required
+"#Plugin 'gmarik/Vundle.vim'
+"#Plugin 'tmhedberg/SimpylFold'
+"#Plugin 'vim-scripts/indentpython.vim'
+"#"Bundle 'Valloric/YouCompleteMe'
+"#"Plugin 'scrooloose/syntastic'
+"#
+"#
+"#" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+"#
+"#" All of your Plugins must be added before the following line
+"#call vundle#end()            " required
+
+
+
 filetype plugin indent on    " required
 
 set nomodeline

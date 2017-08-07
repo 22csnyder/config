@@ -1,0 +1,7 @@
+#!/bin/bash
+
+/usr/bin/redshift-gtk -c /home/chris/.config/redshift.conf
+#/usr/bin/redshift-gtk -c /home/chris/.config/redshift.conf &
+
+
+

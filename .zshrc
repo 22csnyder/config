@@ -53,7 +53,8 @@ plugins=(git fasd)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/christopher/.bin/Utilities:/home/christopher/.bin/Utilities:/usr/local/cuda/bin:/home/christopher/jstock"
+#export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/christopher/.bin/Utilities:/home/christopher/.bin/Utilities:/usr/local/cuda/bin:/home/christopher/jstock"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/christopher/.bin/Utilities:/home/christopher/.bin/Utilities:/usr/local/cuda/bin:/home/christopher/jstock"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -193,6 +194,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
+default="tensorflow-r1.1"
+workon $default
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -285,6 +289,10 @@ NLP=/home/christopher/Documents/Classes/CS388
 
 PATH=$PATH:/usr/local/cuda/bin
 LD_LIBRARY_PATH=/usr/local/cuda/lib64
+
+export PATH=$PATH:/usr/local/cuda-8.0/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda
 #LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64#it was previously empty
 
 
@@ -326,3 +334,12 @@ export COPASIDIR=~/Documents/Classes/BME383J/COPASI-4.16.104-Linux-64bit
 
 #this is a test
 
+
+##I don't think this works
+#add timestamp to history:
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
+TWO=/home/chris/Projects/CausalGAN/TwoLabelers
+CG=/home/chris/Projects/CausalGAN
+VB=~/Projects/valid-batch
+        
