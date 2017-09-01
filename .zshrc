@@ -54,7 +54,13 @@ plugins=(git fasd)
 # User configuration
 
 #export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/christopher/.bin/Utilities:/home/christopher/.bin/Utilities:/usr/local/cuda/bin:/home/christopher/jstock"
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/christopher/.bin/Utilities:/home/christopher/.bin/Utilities:/usr/local/cuda/bin:/home/christopher/jstock"
+#
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/christopher/.bin/Utilities:/home/christopher/.bin/Utilities:/usr/local/cuda/bin:/home/christopher/jstock"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/christopher/.bin/Utilities:/home/christopher/.bin/Utilities:/home/christopher/jstock"
+#export PATH="/home/christopher/.bin/Utilities:/home/christopher/jstock"
+
+
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -343,3 +349,4 @@ TWO=/home/chris/Projects/CausalGAN/TwoLabelers
 CG=/home/chris/Projects/CausalGAN
 VB=~/Projects/valid-batch
         
+DROP=~/Dropbox
