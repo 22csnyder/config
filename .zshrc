@@ -313,7 +313,7 @@ PATH=$PATH:~/jstock
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
 alias vpnui='/opt/cisco/anyconnect/bin/vpn'
 
-MD2="/home/christopher/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded"
+MD2="~/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded"
 
 MD="~/Documents/Mendeley\ Desktop"
 
@@ -345,8 +345,8 @@ export COPASIDIR=~/Documents/Classes/BME383J/COPASI-4.16.104-Linux-64bit
 #add timestamp to history:
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
-TWO=/home/chris/Projects/CausalGAN/TwoLabelers
-CG=/home/chris/Projects/CausalGAN
+TWO=~/Projects/CausalGAN/TwoLabelers
+CG=~/Projects/CausalGAN
 CGS=/home/chris/Projects/CausalGAN_staging
 VB=~/Projects/valid-batch
         
