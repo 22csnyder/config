@@ -347,6 +347,7 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 
 TWO=/home/chris/Projects/CausalGAN/TwoLabelers
 CG=/home/chris/Projects/CausalGAN
+CGS=/home/chris/Projects/CausalGAN_staging
 VB=~/Projects/valid-batch
         
 DROP=~/Dropbox
