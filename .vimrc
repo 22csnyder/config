@@ -82,8 +82,16 @@ call plug#end()
 
 
 
+":h filetype
+":filetype
+":filetype detect
+"seems to undo 'filetype off'
 filetype plugin indent on    " required
+"filetype plugin on    " required
 
+
+"modelines are pieces of text you put in a file you are editing to get
+"specific behavior in that file. I guess this disables that option
 set nomodeline
 
 set clipboard=unnamedplus
@@ -91,12 +99,12 @@ set clipboard=unnamedplus
 set number
 set relativenumber
 
-syntax enable
-set background=dark
-"colorscheme solarized
-
 " enable syntax highlighting
 syntax enable
+
+"colorscheme solarized
+set background=dark
+
 
 " makes code look pretty
 "let python_highlight_all=1
@@ -106,6 +114,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"au short for autocmd
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |

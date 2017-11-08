@@ -31,7 +31,7 @@ nbconvert==4.2.0
 nbformat==4.1.0
 networkx==1.11
 notebook==4.2.2
-numpy==1.11.1
+numpy==1.13.3
 olefile==0.44
 pandas==0.19.2
 pathlib2==2.1.0
