@@ -352,3 +352,4 @@ CGS=/home/chris/Projects/CausalGAN_staging
 VB=~/Projects/valid-batch
         
 DROP=~/Dropbox
+PT=$DROP/PAC\ Tensor
