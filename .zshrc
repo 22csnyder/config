@@ -200,7 +200,8 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
-default="tensorflow-r1.1"
+#default="tensorflow-r1.1"
+default="tensorflow-source1.4-cd8.0-cn7.0.1"
 workon $default
 
 # Add an "alert" alias for long running commands.  Use like so:
