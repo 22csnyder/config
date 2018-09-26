@@ -318,11 +318,12 @@ MD2="~/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded"
 
 MD="~/Documents/Mendeley\ Desktop"
 
+MDBIB=~/Documents/MendeleyBibtex
+
 #ra="/home/christopher/Documents/Vishwanath/readmission"
 #RA="/home/christopher/Documents/Vishwanath/Readmissions"
 #AWM="/home/christopher/.config/awesome"
 
-export CF=~/Projects/config
 
 #alias MD="/home/christopher/.local"
 #alias MD="/home/christopher/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded"
@@ -351,5 +352,9 @@ CG=~/Projects/CausalGAN
 CGS=/home/chris/Projects/CausalGAN_staging
 VB=~/Projects/valid-batch
         
+export CF=~/Projects/config
 DROP=~/Dropbox
 PT=$DROP/PAC\ Tensor
+
+PATH=$PATH:
+
