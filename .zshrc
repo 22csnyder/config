@@ -200,9 +200,6 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
-#default="tensorflow-r1.1"
-default="tensorflow-source1.4-cd8.0-cn7.0.1"
-workon $default
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -287,37 +284,43 @@ LR=~/Documents/Classes/EE371R/ClassProject
 
 
 UL=~/Projects/Utilities
-
 PATH=$PATH:$UL
 #source $UL/useful_functions
 source $UL/source_me
 
-NLP=/home/christopher/Documents/Classes/CS388
-
 PATH=$PATH:/usr/local/cuda/bin
 LD_LIBRARY_PATH=/usr/local/cuda/lib64
 
+#default="tensorflow-r1.1"
+
+###tf1.11 req cuda 9. tf 1.4-cd8 reques cuda 8 #probably should put this in the VE
+
+default="tensorflow-source1.4-cd8.0-cn7.0.1"
 export PATH=$PATH:/usr/local/cuda-8.0/bin
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 export CUDA_HOME=/usr/local/cuda
-#LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64#it was previously empty
+
+#default="tensorflow-1.11"##ERR doesn't work with 9.2. needs build from source
+#export PATH=$PATH:/usr/local/cuda-9.2/bin
+#export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64:$LD_LIBRARY_PATH
+#export CUDA_HOME=/usr/local/cuda
+
+
+workon $default
+
 
 
 windows__Downloads=/cygdrive/c/Users/cgs567/Downloads
 K2015=~/Documents/Corral/Ki-Confocal-2015
 
-
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
-PATH=$PATH:~/jstock
 
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
 alias vpnui='/opt/cisco/anyconnect/bin/vpn'
 
 MD2="~/.local/share/data/Mendeley\ Ltd./Mendeley\ Desktop/Downloaded"
-
 MD="~/Documents/Mendeley\ Desktop"
-
 MDBIB=~/Documents/MendeleyBibtex
 
 #ra="/home/christopher/Documents/Vishwanath/readmission"
