@@ -191,6 +191,11 @@ function cs(){
 cd "$@" && ls
 }
 
+function ms(){
+mv "$1" "$2" 
+cs "$2"
+}
+
 function mcs(){
 mv "$1" "$2"
 cs "$2"
@@ -270,11 +275,6 @@ ssh -fNL $port':stampede.tacc.utexas.edu:'$port csnyder@stampede.tacc.utexas.edu
 }
 #try vinagre localhost::14294
 
-function ms(){
-mv "$1" "$2" 
-cs "$2"
-}
-Meetings=~/Documents/Ben-Yakar/Meetings
 
 ML=~/Documents/Market-Learn
 #GML="git@gitlab.com:Snyder/Market-Learn.git"
@@ -295,9 +295,12 @@ LD_LIBRARY_PATH=/usr/local/cuda/lib64
 
 ###tf1.11 req cuda 9. tf 1.4-cd8 reques cuda 8 #probably should put this in the VE
 
-default="tensorflow-source1.4-cd8.0-cn7.0.1"
-export PATH=$PATH:/usr/local/cuda-8.0/bin
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
+default="tensorflow-2.0beta"
+#default="tensorflow-source1.4-cd8.0-cn7.0.1"
+
+#These paths are out of date. Now use 10.1
+#export PATH=$PATH:/usr/local/cuda-8.0/bin
+#export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 export CUDA_HOME=/usr/local/cuda
 
 #default="tensorflow-1.11"##ERR doesn't work with 9.2. needs build from source
@@ -352,10 +355,10 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 
 TWO=~/Projects/CausalGAN/TwoLabelers
 CG=~/Projects/CausalGAN
-CGS=/home/chris/Projects/CausalGAN_staging
+#CGS=/home/chris/Projects/CausalGAN_staging
 VB=~/Projects/valid-batch
         
-export CF=~/Projects/config
+export CFX=~/Projects/config
 DROP=~/Dropbox
 PT=$DROP/PAC\ Tensor
 
