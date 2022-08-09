@@ -4,4 +4,6 @@
 #/usr/bin/redshift-gtk -c /home/chris/.config/redshift.conf &
 
 
+#has been chmod to not be active
+#   chmod -x startup_chris
 

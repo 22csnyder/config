@@ -19,8 +19,9 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
 
 "Specifying this way, vimplug will not autoupdate big YCM package
-Plug '~/.vim/plugged/YouCompleteMe'
+"Plug '~/.vim/plugged/YouCompleteMe'
 "Plug 'Valloric/YouCompleteMe'
+Plug 'valloric/youcompleteme'
 
 "Use gl or gL operators for alignment: 
 "try gl=
@@ -94,7 +95,8 @@ filetype plugin indent on    " required
 "specific behavior in that file. I guess this disables that option
 set nomodeline
 
-set clipboard=unnamedplus
+"On mac this was messing with normal unnamed copypaste with y,p within vim
+"set clipboard=unnamedplus
 
 set number
 set relativenumber
