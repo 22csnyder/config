@@ -234,3 +234,16 @@ export PROJ="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~Clou
 export RIS="compute1-client-2.ris.wustl.edu"
 export HIT="/storage1/fs1/zaydmanm/Active/nspies/HIT"
 
+
+
+
+#unclear shell behavior within RIS
+export RANZSHRC='YES'
+
+export LSF_DOCKER_VOLUMES='/storage1/fs1/zaydmanm/Active:/storage1/fs1/zaydmanm/Active'
+export WORK='/storage1/fs1/zaydmanm/Active'
+
+export HIT='/storage1/fs1/zaydmanm/Active/csnyder/HIT' #doesnt exist yet
+export I2='/storage1/fs1/zaydmanm/Active/nspies/HIT/Data/I2_Data/'
+
+
