@@ -243,6 +243,6 @@ export WORK='/storage1/fs1/zaydmanm/Active'
 #export HIT='/storage1/fs1/zaydmanm/Active/csnyder/HIT' #doesnt exist yet
 #export I2='/storage1/fs1/zaydmanm/Active/nspies/HIT/Data/I2_Data/'
 
-export HIT='/storage1/fs1/zaydmanm/Active/HIT/Data'
-
+#export HIT='/storage1/fs1/zaydmanm/Active/HIT/Data'
+export HIT='/storage1/fs1/zaydmanm/Active/HIT/'
 

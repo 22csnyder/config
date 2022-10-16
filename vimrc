@@ -21,7 +21,7 @@ Plug 'vim-scripts/indentpython.vim'
 "Specifying this way, vimplug will not autoupdate big YCM package
 "Plug '~/.vim/plugged/YouCompleteMe'
 "Plug 'Valloric/YouCompleteMe'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'"commented aug10, 2022
 
 "Use gl or gL operators for alignment: 
 "try gl=
