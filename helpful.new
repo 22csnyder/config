@@ -1,1 +1,3 @@
 systemextensionsctl list
+du -sh ./* | sort -rh   #human sort
+chmod a=r  # gives readonly access to owner, group, and all users

@@ -230,8 +230,10 @@ export DATA=$HOME/DATA/
 #
 
 export pthrp="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs/Code\ in\ Cloud/pthrp"
-export PROJ="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs/Code\ in\ Cloud/pthrp"
+#export PROJ="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs/Code\ in\ Cloud/pthrp"
+export PROJ="/Users/christophersnyder/Projects"
 export RIS="compute1-client-2.ris.wustl.edu"
+<<<<<<< HEAD
 
 
 #unclear shell behavior within RIS
@@ -245,4 +247,24 @@ export WORK='/storage1/fs1/zaydmanm/Active'
 
 #export HIT='/storage1/fs1/zaydmanm/Active/HIT/Data'
 export HIT='/storage1/fs1/zaydmanm/Active/HIT/'
+=======
+export HIT="/storage1/fs1/zaydmanm/Active/nspies/HIT"
+export BOX="/Users/christophersnyder/Library/CloudStorage/Box-Box"
+export BOXPJI="/Users/christophersnyder/Projects/NTM\ PJI\ Files"
+export NTMPJI="/Users/christophersnyder/Projects/ntm-pji-proj"
+export PJI="/Users/christophersnyder/Projects/ntm-pji-proj"
+export ntmpji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
+export pji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
+>>>>>>> 96c1a05 (local config)
 
+export VC="$HOME/.vimrc" 
+export ZC="$HOME/.zshrc" 
+
+export MPLBACKEND=TkAgg 
+
+#Zotero
+export ZoteroFileSystem="/Users/christophersnyder/Library/Mobile Documents/com~apple~CloudDocs/Zotero Filesystem"
+export ZoteroDatabase="/Users/christophersnyder/Zotero"
+
+#Zotero Attachment FileSystem within pdfexpert:
+#/Users/christophersnyder/Library/Mobile Documents/3L68KQB4HG~com~readdle~CommonDocuments/Documents/Zotero Filesystem
