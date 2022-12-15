@@ -198,7 +198,8 @@ cs "$2"
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+
+#source /usr/local/bin/virtualenvwrapper.sh
 
 
 # Add an "alert" alias for long running commands.  Use like so:

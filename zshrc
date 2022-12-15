@@ -129,8 +129,11 @@ export PROJECT_HOME=$HOME/Projects
 export VIRTUALENVWRAPPER_PYTHON="$(command \which python3)"
 #export VIRTUALENVWRAPPER_VIRTUALENV="$(command \which python3)"
 #export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-source /usr/local/bin/virtualenvwrapper.sh
 #default='tensorflow-r1.1' <or whatever>
+
+##  This line was my bane for about an hour. It was a huge pain to try to track it down.
+##source /usr/local/bin/virtualenvwrapper.sh
+
 
 #Just an example with anaconda instead of virtualenv# (not preferred)
 # . /Users/christophersnyder/anaconda2/etc/profile.d/conda.sh 
