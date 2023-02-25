@@ -142,8 +142,8 @@ export VIRTUALENVWRAPPER_PYTHON="$(command \which python3)"
 
 
 #Misc User Defined
-export STEP=/Users/christophersnyder/Documents/UTMBy4/STEP
-export UTMB=/Users/christophersnyder/Documents/UTMBy4
+#export STEP=/Users/christophersnyder/Documents/UTMBy4/STEP
+#export UTMB=/Users/christophersnyder/Documents/UTMBy4
 UL=~/Projects/Utilities
 source $UL/source_me  #does:# PATH=$PATH:$UL # source $UL/useful_functions # etc
 
@@ -236,7 +236,7 @@ export pthrp="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~Clo
 #export PROJ="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs/Code\ in\ Cloud/pthrp"
 export PROJ="/Users/christophersnyder/Projects"
 export RIS="compute1-client-2.ris.wustl.edu"
-<<<<<<< HEAD
+#<<<<<<< HEAD
 
 
 #unclear shell behavior within RIS
@@ -250,7 +250,7 @@ export WORK='/storage1/fs1/zaydmanm/Active'
 
 #export HIT='/storage1/fs1/zaydmanm/Active/HIT/Data'
 export HIT='/storage1/fs1/zaydmanm/Active/HIT/'
-=======
+#=======
 export HIT="/storage1/fs1/zaydmanm/Active/nspies/HIT"
 export BOX="/Users/christophersnyder/Library/CloudStorage/Box-Box"
 export BOXPJI="/Users/christophersnyder/Projects/NTM\ PJI\ Files"
@@ -258,7 +258,7 @@ export NTMPJI="/Users/christophersnyder/Projects/ntm-pji-proj"
 export PJI="/Users/christophersnyder/Projects/ntm-pji-proj"
 export ntmpji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
 export pji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
->>>>>>> 96c1a05 (local config)
+#>>>>>>> 96c1a05 (local config)
 
 export VC="$HOME/.vimrc" 
 export ZC="$HOME/.zshrc" 
