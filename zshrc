@@ -225,7 +225,12 @@ unset __conda_setup
 export ICLOUD='/Users/christophersnyder/Library/Mobile Documents/com~apple~CloudDocs'
 #export ICLOUD="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs"
 #export BOX  = /users/christophersnyder/library/cloudstorage/box-box/
-export DATA=$HOME/DATA/
+#export DATA=$HOME/DATA/
+
+##  ACTIVE  ##
+#conda env config vars set DATA="/Users/christophersnyder/Projects/local-lab-dim-proj/LDIM-Proj.box/Data.box"
+#conda env config vars set FIGURES="/Users/christophersnyder/Projects/local-lab-dim-proj/LDIM-Proj.box/Figures.box"
+
 
 #try again without spaces in folder names :/
 #export pthrp="$ICLOUD/Code\ in\ Cloud/pthrp"
@@ -258,7 +263,14 @@ export NTMPJI="/Users/christophersnyder/Projects/ntm-pji-proj"
 export PJI="/Users/christophersnyder/Projects/ntm-pji-proj"
 export ntmpji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
 export pji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
+export LLD="/Users/christophersnyder/Projects/local-lab-dim-proj"
 #>>>>>>> 96c1a05 (local config)
+
+export NVM_DIR="$HOME/.nvm"
+#[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+#[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+. "$(brew --prefix nvm)/nvm.sh"
+
 
 export VC="$HOME/.vimrc" 
 export ZC="$HOME/.zshrc" 
@@ -271,3 +283,34 @@ export ZoteroDatabase="/Users/christophersnyder/Zotero"
 
 #Zotero Attachment FileSystem within pdfexpert:
 #/Users/christophersnyder/Library/Mobile Documents/3L68KQB4HG~com~readdle~CommonDocuments/Documents/Zotero Filesystem
+#
+#
+
+
+#CP Informatics Server
+export CP_ZAYDMAN="/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman"
+export TSH_ZAYDMAN="/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman/10203"
+
+#export LGM_ZAYDMAN="/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman"
+##TSH Project
+#export LGM_TSH     = "/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman/10203"
+#export LGM_TSH_CSV = "/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman/10203/20200101_20230101_Data.csv"
+
+
+export TSH_PROJ='/Users/christophersnyder/Projects/tsh-proj'
+export TSH_PRES='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds/TSH.tex'
+export TSH_LEAF='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds/TSH.tex/Seasonal-TSH---Grand-Rounds-2023'
+export TSH_TEX='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds/TSH.tex/Seasonal-TSH---Grand-Rounds-2023'
+export GR='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds'
+export LLM='/Users/christophersnyder/Library/CloudStorage/Box-Box/LLM-Proj.box'
+export llm='/Users/christophersnyder/Projects/llm-wksp'
+export TSH_BOX='/Users/christophersnyder/Library/CloudStorage/Box-Box/TSH-Proj.box'
+
+
+export RPI='nandc36@raspberrypi.attlocal.net'
+
+export HF ='/Users/christophersnyder/Projects/llm-hface'
+export HUB='/Users/christophersnyder/.cache/huggingface/hub'
+
+
+
