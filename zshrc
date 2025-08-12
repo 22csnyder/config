@@ -3,17 +3,26 @@
 
 export ZSH=~/.oh-my-zsh
 
+
+##  Themes I like
+# 	nebirhos.zsh-theme		conda, rbenv and git branch indicators.
+#
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="random"
 
+##Nice theme to try:
+#/Users/christophersnyder/.oh-my-zsh/themes/wuffers.zsh-theme
+
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+
+
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
@@ -29,10 +38,13 @@ ZSH_THEME="random"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true" #2024.09.05
+
+#alias op='nocorrect op'
+#alias which='nocorrect which'
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -51,7 +63,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fasd)
+plugins=(git fasd zsh-autosuggestions)
 
 
 
@@ -98,6 +110,9 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 ##Real User Stuff##
 
+# stop recommending ` did you mean .env [nyae] `
+alias env=".env"
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -108,12 +123,12 @@ function cs(){
 cd "$@" && ls
 }
 
-function mcs(){
+function mkcs(){
 mv "$1" "$2"
 cs "$2"
 }
 
-function ms(){
+function mkdircd(){
 mv "$1" "$2" 
 cs "$2"
 }
@@ -123,11 +138,11 @@ alias vpnui='/opt/cisco/anyconnect/bin/vpn'
 
 # revisiting using virtualenvwrapper #21.10.04
 #  #using conda setup on mac instead
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 #new 22.04
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
-export VIRTUALENVWRAPPER_PYTHON="$(command \which python3)"
-#export VIRTUALENVWRAPPER_VIRTUALENV="$(command \which python3)"
+##export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 #new 22.04
+##export WORKON_HOME=$HOME/.virtualenvs
+##export PROJECT_HOME=$HOME/Projects
+##export VIRTUALENVWRAPPER_PYTHON="$(command \which python3)"
+###export VIRTUALENVWRAPPER_VIRTUALENV="$(command \which python3)"
 #export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 #default='tensorflow-r1.1' <or whatever>
 
@@ -225,11 +240,8 @@ unset __conda_setup
 export ICLOUD='/Users/christophersnyder/Library/Mobile Documents/com~apple~CloudDocs'
 #export ICLOUD="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs"
 #export BOX  = /users/christophersnyder/library/cloudstorage/box-box/
-#export DATA=$HOME/DATA/
 
-##  ACTIVE  ##
-#conda env config vars set DATA="/Users/christophersnyder/Projects/local-lab-dim-proj/LDIM-Proj.box/Data.box"
-#conda env config vars set FIGURES="/Users/christophersnyder/Projects/local-lab-dim-proj/LDIM-Proj.box/Figures.box"
+# #conda env config vars set FIGURES="/Users/christophersnyder/Projects/local-lab-dim-proj/LDIM-Proj.box/Figures.box"
 
 
 #try again without spaces in folder names :/
@@ -237,34 +249,34 @@ export ICLOUD='/Users/christophersnyder/Library/Mobile Documents/com~apple~Cloud
 #export pthrp='$ICLOUD/Code\ in\ Cloud/pthrp' 
 #
 
-export pthrp="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs/Code\ in\ Cloud/pthrp"
+#export pthrp="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs/Code\ in\ Cloud/pthrp"
 #export PROJ="/Users/christophersnyder/Library/Mobile\ Documents/com\~apple\~CloudDocs/Code\ in\ Cloud/pthrp"
 export PROJ="/Users/christophersnyder/Projects"
 export RIS="compute1-client-2.ris.wustl.edu"
 #<<<<<<< HEAD
 
 
-#unclear shell behavior within RIS
-export RANZSHRC='YES'
-
-export LSF_DOCKER_VOLUMES='/storage1/fs1/zaydmanm/Active:/storage1/fs1/zaydmanm/Active'
-export WORK='/storage1/fs1/zaydmanm/Active'
-
-#export HIT='/storage1/fs1/zaydmanm/Active/csnyder/HIT' #doesnt exist yet
-#export I2='/storage1/fs1/zaydmanm/Active/nspies/HIT/Data/I2_Data/'
-
-#export HIT='/storage1/fs1/zaydmanm/Active/HIT/Data'
-export HIT='/storage1/fs1/zaydmanm/Active/HIT/'
-#=======
-export HIT="/storage1/fs1/zaydmanm/Active/nspies/HIT"
-export BOX="/Users/christophersnyder/Library/CloudStorage/Box-Box"
-export BOXPJI="/Users/christophersnyder/Projects/NTM\ PJI\ Files"
-export NTMPJI="/Users/christophersnyder/Projects/ntm-pji-proj"
-export PJI="/Users/christophersnyder/Projects/ntm-pji-proj"
-export ntmpji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
-export pji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
-export LLD="/Users/christophersnyder/Projects/local-lab-dim-proj"
-#>>>>>>> 96c1a05 (local config)
+### ##unclear shell behavior within RIS
+### #export RANZSHRC='YES'
+### #
+### #export LSF_DOCKER_VOLUMES='/storage1/fs1/zaydmanm/Active:/storage1/fs1/zaydmanm/Active'
+### #export WORK='/storage1/fs1/zaydmanm/Active'
+### #
+### ##export HIT='/storage1/fs1/zaydmanm/Active/csnyder/HIT' #doesnt exist yet
+### ##export I2='/storage1/fs1/zaydmanm/Active/nspies/HIT/Data/I2_Data/'
+### #
+### ##export HIT='/storage1/fs1/zaydmanm/Active/HIT/Data'
+### #export HIT='/storage1/fs1/zaydmanm/Active/HIT/'
+### ##=======
+#export HIT="/storage1/fs1/zaydmanm/Active/nspies/HIT"
+#export BOXPJI="/Users/christophersnyder/Projects/NTM\ PJI\ Files"
+#export NTMPJI="/Users/christophersnyder/Projects/ntm-pji-proj"
+#export PJI="/Users/christophersnyder/Projects/ntm-pji-proj"
+#export ntmpji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
+#export pji="/Users/christophersnyder/Projects/ntm-pji-proj/ntm-pji"
+#export LLD="/Users/christophersnyder/Projects/local-lab-dim-proj"
+##>>>>>>> 96c1a05 (local config)
+export BOX="/Users/christophersnyder/Library/CloudStorage/Box-Box" #needed for conf-cpt
 
 export NVM_DIR="$HOME/.nvm"
 #[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -289,7 +301,7 @@ export ZoteroDatabase="/Users/christophersnyder/Zotero"
 
 #CP Informatics Server
 export CP_ZAYDMAN="/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman"
-export TSH_ZAYDMAN="/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman/10203"
+# export TSH_ZAYDMAN="/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman/10203"
 
 #export LGM_ZAYDMAN="/Volumes/LGM/Shared/CP_Informatics/PIR_Consults/mzaydman"
 ##TSH Project
@@ -301,16 +313,204 @@ export TSH_PROJ='/Users/christophersnyder/Projects/tsh-proj'
 export TSH_PRES='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds/TSH.tex'
 export TSH_LEAF='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds/TSH.tex/Seasonal-TSH---Grand-Rounds-2023'
 export TSH_TEX='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds/TSH.tex/Seasonal-TSH---Grand-Rounds-2023'
-export GR='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds'
-export LLM='/Users/christophersnyder/Library/CloudStorage/Box-Box/LLM-Proj.box'
-export llm='/Users/christophersnyder/Projects/llm-wksp'
-export TSH_BOX='/Users/christophersnyder/Library/CloudStorage/Box-Box/TSH-Proj.box'
+#export GR='/Users/christophersnyder/Library/CloudStorage/Box-Box/Grand Rounds'
+#export LLM='/Users/christophersnyder/Library/CloudStorage/Box-Box/LLM-Proj.box'
+#export llm='/Users/christophersnyder/Projects/llm-wksp'
+#export TSH_BOX='/Users/christophersnyder/Library/CloudStorage/Box-Box/TSH-Proj.box'
 
 
+
+#export llm='/Users/christophersnyder/Projects/llm-wksp'
+#export HF="/Users/christophersnyder/Projects/llm_hface"
+#export HUB='/Users/christophersnyder/.cache/huggingface/hub'
+
+export PATH=$PATH:"$HOME/.docker/bin"
+
+#server names
 export RPI='nandc36@raspberrypi.attlocal.net'
+export API='C4000WD-8BTSKQ3.accounts.ad.wustl.edu'
+export APAI='csnyder@C4000WD-8BTSKQ3.accounts.ad.wustl.edu'
+#	#Go>Connect then just put in $API as above
+#	#Also I had Microsoft Remote Desktop for MacOS going
 
-export HF ='/Users/christophersnyder/Projects/llm-hface'
-export HUB='/Users/christophersnyder/.cache/huggingface/hub'
+#conda activate torch_llm
+
+FLOWY=$BOX/FLOWY
+flowy="${HOME}/Projects/flowy"
+#flowy=$BOX/FLOWY/workspace #11/18/`24
+export flowyfiles='/Users/christophersnyder/Library/CloudStorage/Box-Box/FLOWY/Kaluza.proj/ex flow/flowy-filesystem'
+
+
+flo=$BOX/FLOWY/workspace
+
+FLOW_DRIVE_BJH=/Volumes/bjhflowcytometry
+FLOWBJH=/Volumes/bjhflowcytometry
+FLOPDF=$FLOWBJH/PDF\ and\ Analysis\ Files
+
+
+# <2024.07.25: parse error near then. cgpt fix below. Assess: related to website project>
+#eval “export PATH="/Users/christophersnyder/.rbenv/shims:${PATH}" export RBENV_SHELL=zsh source '/usr/local/Cellar/rbenv/1.2.0/libexec/../completions/rbenv.zsh' command rbenv rehash 2>/dev/null rbenv() { local command command="${1:-}" if [ "$#" -gt 0 ]; then shift fi case "$command" in rehash|shell) eval "$(rbenv "sh-$command" "$@")";; *) command rbenv "$command" "$@";; esac }”
+
+# nah##2024/07/30 	its acting weird so I'm removing weird parts
+export PATH="/Users/christophersnyder/.rbenv/shims:${PATH}"
+export RBENV_SHELL=zsh
+#source '/usr/local/Cellar/rbenv/1.2.0/libexec/../completions/rbenv.zsh'#7/30/2024-commented out
+command rbenv rehash 2>/dev/null
+rbenv() {
+  local command
+  command="${1:-}"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+  case "$command" in
+    rehash|shell)
+      eval "$(rbenv "sh-$command" "$@")"
+      ;;
+    *)
+      command rbenv "$command" "$@"
+      ;;
+  esac
+}
+
+
+# #not sure if above worked (7/3/2024)
+# #try next time simply appending
+# ## Load rbenv automatically by appending
+# eval "$(rbenv init - zsh)"
+# #or
+# eval "$(rbenv init -)"
+
+# Created by `pipx` on 2024-07-26 06:10:44
+export PATH="$PATH:/Users/christophersnyder/.local/bin"
+
+
+# 2024-07-28 	chatgpt code to do mkdir and cd in 1 command
+# Function to create a directory and change into it
+mkcd() {
+  if [ -z "$1" ]; then
+    echo "Usage: mkcd <directory_name>"
+    return 1
+  fi
+  
+  if [ -d "$1" ]; then
+    cd "$1"
+  else
+    mkdir -p "$1" && cd "$1"
+  fi
+}
+mkcs() {
+  if [ -z "$1" ]; then
+    echo "Usage: mkcd <directory_name>"
+    return 1
+  fi
+  
+  if [ -d "$1" ]; then
+    cs "$1"
+  else
+    mkdir -p "$1" && cs "$1"
+  fi
+}
+
+alias mkdircd='mkcd'
+alias mkdircs='mkcs'
+
+
+export SSH_WSL_PORT=28
+
+##		Some throwaway code from env file I couldn't throw away  :
+#
+# # Google Gemini API Key
+# API_KEY=AIzaSyAN7NVH9GqR0L31DQzL36eHqxi7cwkwIQE
+# # https://console.cloud.google.com/apis/credentials?project=llm-proj&folder=&organizationId=
+
+# #Semantic Kernel
+# #TODO needs signup ithink https://azure.microsoft.com/en-us/free/
+# OPENAI_ORG_ID=""
+# AZURE_OPENAI_DEPLOYMENT_NAME=""
+# AZURE_OPENAI_ENDPOINT=""
+# AZURE_OPENAI_API_KEY=""
+
+# ##  --  ## WHO Config API_KEY ## --  ##
+# # WHO_ICD_API_KEY=
+
+# ICD_API_WHO_CLIENT_ID=c246f097-5fc4-4bb2-ac6c-db0b0638ce3b_2da67dc5-06dd-4cb5-a216-7ef66da78596
+# ICD_API_WHO_CLIENT_SECRET=oUI8wAyjNGc0uNeWfeDHTJN57eXK6Js7AgRYcacuplY=
+
+# ##  --  ## WHO Config API_KEY ## --  ##
+
+
+# Conf-CPT Project #
+
+
+## Check if the Conda environment is already active
+#if [[ "$CONDA_DEFAULT_ENV" != "conf-cpt" ]]; then
+#    # Activate the Conda environment
+#    conda activate conf-cpt
+#fi
+
+
+#export CONFCPT="/Users/christophersnyder/Projects/Conf-CPT.dev"
+#export CCPT="/Users/christophersnyder/Projects/Conf-CPT.dev"
+#export CPTDEV="/Users/christophersnyder/Projects/Conf-CPT.dev"
+export CPTBOX="/Users/christophersnyder/Library/CloudStorage/Box-Box/Conf-CPT.proj"
+export ccpt="/Users/christophersnyder/Projects/Conf-CPT.dev/conf-cpt"
+
+#conda activate global
+#conda config --set auto_activate_base false
+
+## Activate conda environment if the current directory is named "Conf-CPT.dev"
+#if [[ "$(basename "$PWD")" == "${HOME}/Projects/Conf-CPT.dev/conf-cpt" ]]; then
+#    conda deactivate
+#    conda activate conf-cpt
+#fi
 
 
 
+## #Print the current Python interpreter
+# #echo "The current interpreter is: $(which python)"
+
+eval "$(gh copilot alias -- zsh)"
+
+export dcqc=/Users/christophersnyder/Projects/DashChat.dev/dash-chat-qc
+export DCQC=${BOX}/DashChat.proj
+export pits=/Users/christophersnyder/Projects/DashChat.dev/pathology-informatics-tools
+export pitx=/Users/christophersnyder/Projects/DashChat.dev/pathology-informatics-tools
+
+
+export digi=~/Projects/digital-path-talk-2024
+export digi=~/Projects/digital-path-talk-2024
+export DIGI='/Users/christophersnyder/Library/CloudStorage/Box-Box/informatics wustl/CompDigiPathTalk'
+export wuai=/Users/christophersnyder/Projects/washu-ai/genai-api-demos
+
+# uv autocompletions #
+eval "$(uv generate-shell-completion zsh)"
+
+
+#1pw cli
+# # autocompletions
+
+eval "$(op completion zsh)"; compdef _op op
+
+export BOARDS="/Users/christophersnyder/Library/CloudStorage/Box-Box/PGY-N/licensing and boards/BOARD review"
+
+
+### - 2025  - ###
+##  March 28  ##
+# Espanso=
+#
+export ESPANSO_CONFIG="/Users/christophersnyder/Library/Application Support/espanso"
+
+export HEME_TEXTS=~/Projects/heme-texts
+export ESPANSO_HEME=~/Projects/heme-texts/match
+
+export AVRepair="/Users/christophersnyder/Local Documents/LocalDrive/NeedsAVRepair"
+export AVR="/Users/christophersnyder/Local Documents/LocalDrive/NeedsAVRepair"
+export AudioRepair="/Users/christophersnyder/Local Documents/LocalDrive/NeedsAVRepair"
+
+
+export SSD0='/Volumes/Extreme SSDa'
+export LocalFT="~/Local\ Documents/LocalDrive/LocalMedia/LocalFreetube"
+
+
+export UW1Dr="~/Library/CloudStorage/OneDrive-UW/"
+export OneDr="~/Library/CloudStorage/OneDrive-UW/"
